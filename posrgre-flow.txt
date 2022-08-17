@@ -1,0 +1,14 @@
+\l
+CREATE DATABSE users;
+\l
+\c users
+\! cls clear
+create table users (
+ID serial primary key,
+name varchar(255),
+email varchar(255),
+age int;
+\dt
+insert into users (name, email, age)
+values ('shincode', 'email@gmail.com', 25), ('');
+select * from users;
